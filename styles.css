@@ -1,9 +1,8 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: pink;
-    color: aquamarine;
+    color: white;
     margin: 20px;
-    margin-top: 30px;
     padding: 20px;
 }
 
@@ -34,7 +33,7 @@ nav ul li a:hover {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -71,4 +70,11 @@ nav ul li a:hover {
 
 .gallery-item:hover .description {
     opacity: 1;
+}
+
+.gallery-paragraph {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
