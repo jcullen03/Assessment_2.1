@@ -6,6 +6,11 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-size: 50px;
+    padding-left: 20px;
+}
+
 nav {
     background-color: rgb(255, 167, 180);
     padding: 2px;
@@ -89,4 +94,14 @@ nav ul li a:hover {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.gallery-paragraph a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+.gallery-paragraph a:hover {
+    color: white;
+    text-decoration: underline;
 }
