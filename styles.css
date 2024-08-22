@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-    background-color: rgb(255, 167, 181);
+    background-color: rgb(255, 167, 180);
     padding: 10px;
 }
 
@@ -41,12 +41,16 @@ nav ul li a:hover {
 .gallery-item {
     position: relative;
     overflow: hidden;
+    box-shadow: 5px 5px 15px rgb(201, 132, 143);
+    border-radius: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 15px;
 }
 
 .description {
@@ -70,6 +74,10 @@ nav ul li a:hover {
 
 .gallery-item:hover .description {
     opacity: 1;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
 }
 
 .gallery-paragraph {
