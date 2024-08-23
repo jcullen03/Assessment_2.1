@@ -1,11 +1,23 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: pink;
+    font-family: 'tahoma', sans-serif;
+    background-color: rgb(253, 208, 216);
     color: white;
     margin: 0px;
     padding: 0px;
 }
 
+h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    line-height: 2;
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 2;
+}
 
 nav ul li a img.logo {
     width: 100px;
@@ -14,7 +26,7 @@ nav ul li a img.logo {
 
 
 nav {
-    background-color: rgb(255, 167, 180);
+    background-color: rgb(255, 185, 194);
     padding: 2px;
     border-radius: 15px;
     margin: 20px;
