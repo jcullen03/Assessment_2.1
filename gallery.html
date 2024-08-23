@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
     <nav>
         <ul>
             <li><a href="index.html"><img src="images/logo.png" alt="Turner's Treats" class="logo"></a></li>
@@ -19,46 +19,86 @@
         </ul>
     </nav>
     
+    <div class="across">
+        <img src="Images/home across.png">
+        <div class="overlay"></div>
+        <div class="text-over-image">
+            <h1>Gallery</h1>
+        </div>
+    </div>
 
     <p class="gallery-paragraph">
         Some of the many designs made by Turner's Treats in the past. You can adjust the flavours, size and number of tiers to perfectly suit any event by filling in an <a href="order.html">order</a> form. Or get in <a href="contact">contact</a> with us if you have any questions.
     </p>
 
-    <div class="gallery">
-        <div class="gallery-item" data-description="Vanilla cake with fresh strawberry jam filling topped with baby pink frosting">
-            <img src="Images/Strawberry.jpeg" alt="Vanilla cake with strawberry jam">
-            <div class="description"></div>
-        </div>
-        <div class="gallery-item" data-description="Sweet blueberry cake topped with vanilla cream">
-            <img src="Images/blueberry.jpeg" alt="Blueberry cake with vanilla cream">
-            <div class="description"></div>
-        </div>
-        <div class="gallery-item" data-description="Choc/Hazelnut cake with hazelnut cream filling">
-            <img src="Images/Hazelnut.jpeg" alt="Chocolate Hazelnut cake">
-            <div class="description"></div>
-        </div>
-        <div class="gallery-item" data-description="Triple chocolate fudge cake">
-            <img src="Images/Chocolate.jpeg" alt="Triple chocolate cake">
-            <div class="description"></div>
-        </div>
-        <div class="gallery-item" data-description="3-tier dark chcolate cake with coffee cream filling">
-            <img src="Images/Coffee.jpeg" alt="Coffee and dark chcolate cake">
-            <div class="description"></div>
-        </div>        
-        <div class="gallery-item" data-description="Pistachio and milk chocolate cake">
-            <img src="Images/Pistachio.jpeg" alt="Pistachio cake">
-            <div class="description"></div>
-        </div>
-        <div class="gallery-item" data-description="6-tier vanilla rainbow cake">
-            <img src="Images/Rainbow.jpeg" alt="Rainbow cake">
-            <div class="description"></div>  
-        </div> 
-        <div class="gallery-item" data-description="Salted caramel cake with toasted caramel chunks and caramel sauce">
-            <img src="Images/Caramel.jpeg" alt="Salted caramel cake">
-            <div class="description"></div> 
-        </div>         
+<div class="gallery">
+    <div class="gallery-item" data-description="Vanilla cake with fresh strawberry jam filling topped with baby pink frosting" data-name="Vanilla Cake" data-price="12">
+        <img src="Images/Strawberry.jpeg" alt="Vanilla cake with strawberry jam">
+        <div class="description">Vanilla cake with strawberry jam</div>
     </div>
+    <div class="gallery-item" data-description="Sweet blueberry cake topped with vanilla cream" data-name="Blueberry Cake" data-price="10">
+        <img src="Images/blueberry.jpeg" alt="Blueberry cake with vanilla cream">
+        <div class="description">Blueberry cake with vanilla cream</div>
+    </div>
+    <div class="gallery-item" data-description="Choc/Hazelnut cake with hazelnut cream filling" data-name="Chocolate Hazelnut Cake" data-price="15">
+        <img src="Images/Hazelnut.jpeg" alt="Chocolate Hazelnut cake">
+        <div class="description">Chocolate Hazelnut cake</div>
+    </div>
+    <div class="gallery-item" data-description="Triple chocolate fudge cake" data-name="Triple Chocolate Cake" data-price="18">
+        <img src="Images/Chocolate.jpeg" alt="Triple chocolate cake">
+        <div class="description">Triple chocolate cake</div>
+    </div>
+    <div class="gallery-item" data-description="3-tier dark chocolate cake with coffee cream filling" data-name="Coffee Cake" data-price="20">
+        <img src="Images/Coffee.jpeg" alt="Coffee and dark chocolate cake">
+        <div class="description">Coffee and dark chocolate cake</div>
+    </div>
+    <div class="gallery-item" data-description="Pistachio and milk chocolate cake" data-name="Pistachio Cake" data-price="14">
+        <img src="Images/Pistachio.jpeg" alt="Pistachio cake">
+        <div class="description">Pistachio cake</div>
+    </div>
+    <div class="gallery-item" data-description="6-tier vanilla rainbow cake" data-name="Rainbow Cake" data-price="25">
+        <img src="Images/Rainbow.jpeg" alt="Rainbow cake">
+        <div class="description">Rainbow cake</div>
+    </div>
+    <div class="gallery-item" data-description="Salted caramel cake with toasted caramel chunks and caramel sauce" data-name="Salted Caramel Cake" data-price="16">
+        <img src="Images/Caramel.jpeg" alt="Salted caramel cake">
+        <div class="description">Salted caramel cake</div>
+    </div>
+</div>
 
-    <script src="scripts.js"></script>
+<!-- Modal for larger view and adding to cart -->
+<div id="item-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="" alt="" id="modal-image">
+        <h2 id="modal-item-name"></h2>
+        <p id="modal-item-price"></p>
+        <button id="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Cart dropdown -->
+<div class="cart-icon">
+    <span>&#128722;</span> <!-- Cart icon -->
+</div>
+
+<div id="cart-dropdown" class="cart-dropdown">
+    <h3>Your Cart</h3>
+    <div id="cart-items"></div>
+    <button id="view-full-cart">View Full Cart</button>
+</div>
+
+<!-- Full-Screen Cart -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Your Full Cart</h2>
+        <div id="full-cart-items"></div>
+        <button id="checkout-button">Checkout</button>
+    </div>
+</div>
+
+    
+<script src="scripts.js"></script>
 </body>
 </html>
