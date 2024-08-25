@@ -286,18 +286,18 @@ nav ul li a:hover {
 }
 
 .order-form {
-    width: 60%; /* Makes the form wider */
-    margin: 40px; /* Remove auto margin to align left */
+    width: 60%; 
+    margin: 40px; 
     padding: 20px;
-    background-color: #ffe6f0; /* Light pink background */
+    background-color: #ffe6f0; 
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
     position: relative;
-    left: 0; /* Align the form to the left */
+    left: 0; 
 }
 
 .order-form h2 {
-    color: #ff66b2; /* Change the font color to pink */
+    color: #ff66b2;
     font-size: 24px;
     text-align: center;
     padding-top: 20px;
@@ -307,7 +307,7 @@ nav ul li a:hover {
 .order-form label {
     display: block;
     margin-top: 10px;
-    color: #ff66b2; /* Change the label text color to pink */
+    color: #ff66b2; 
     font-weight: bold;
 }
 
@@ -318,16 +318,16 @@ nav ul li a:hover {
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid #ff99cc; /* Pink border */
+    border: 1px solid #ff99cc; 
     border-radius: 4px;
-    background-color: #fff; /* White input fields */
+    background-color: #fff; 
     font-size: 16px;
 }
 
 .order-form button {
     width: 100%;
     padding: 12px;
-    background-color: #ff66b2; /* Pink submit button */
+    background-color: #ff66b2; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -336,5 +336,70 @@ nav ul li a:hover {
 }
 
 .order-form button:hover {
-    background-color: #ff4da6; /* Darker pink on hover */
+    background-color: #ff4da6; 
+}
+
+
+.home-page {
+    background-image: url(Images/home.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.main-box {
+    background-color: rgba(255, 192, 203, 0.9); 
+    width: 80%;  
+    max-width: 900px;
+    margin: 100px auto; 
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.main-box h1 {
+    font-size: 36px;
+    color: #FF69B4; 
+    margin-bottom: 20px;
+}
+
+
+.main-box p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #FF69B4; 
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.button:hover {
+    background-color: #FFC0CB; 
+}
+
+
+.button:active {
+    transform: scale(0.98); 
 }
