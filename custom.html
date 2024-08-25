@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="images/logo.png" alt="Turner's Treats" class="logo"></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="custom.html">Custom</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="across">
+            <img src="Images/about across.jpg">
+            <div class="overlay"></div>
+            <div class="text-over-image">
+                <h1>Custom order</h1>
+            </div>
+        </div>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+
+</head>
+<body>
+
+<div class="order-form">
+    <h2>Place Your Order</h2>
+    
+    <form action="/submit_order" method="POST">
+        <label for="product">Select a product:</label>
+        <select id="product" name="product">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+            <option value="option5">Option 5</option>
+            <option value="option6">Option 6</option>
+            <option value="option7">Option 7</option>
+            <option value="option8">Option 8</option>
+            <option value="option9">Option 9</option>
+            <option value="option10">Option 10</option>
+        </select>
+
+        <label for="orderDetails">Order Details:</label>
+        <textarea id="orderDetails" name="orderDetails" rows="4" placeholder="Enter your order request"></textarea>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</div>
+
+
+        <footer>
+            <p>&copy;2024 Turner's Treats. All rights reserved.</p>
+        </footer>
+
+        </body>
+
+</html>
+
